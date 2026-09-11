@@ -1,4 +1,4 @@
-# Hey Arduino!
+# Hey Arduino, Turn on/off the light!
 
 The **Hey Arduino, Turn on/off the light!** example triggers a LED matrix animation whenever the keyword "Hey Arduino, Turn on/off the light" is detected through a microphone.
 
