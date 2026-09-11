@@ -1,6 +1,6 @@
 # Hey Arduino, Turn on/off the light!
 
-The **Hey Arduino, Turn on/off the light!** example triggers a LED matrix animation whenever the keyword "Hey Arduino, Turn on/off the light" is detected through a microphone.
+The **Hey Arduino, Turn on/off the light!** example triggers a LED matrix animation and turn on and off light whenever the keyword "Hey Arduino, Turn on/off the light" is detected through a microphone.
 
 To use this example, we need to use **Network Mode**, as it requires a [USB-C® hub](https://store.arduino.cc/products/usb-c-to-hdmi-multiport-adapter-with-ethernet-and-usb-hub) (to connect the microphone).
 
@@ -55,7 +55,8 @@ The Brick monitors the audio continuously, and when it detects the keyword, it c
 On the Linux (Python) side:
 
 - `spotter = KeywordSpotting()` - initializes an audio listener that monitors microphone input
-- `spotter.on_detect("hey_arduino", on_keyword_detected)` - if "Hey Arduino" is detected, call the `on_keyword_detected()` function
+- `spotter.on_detect("hey_arduino_turn_on_light", turn_on)` and `spotter.on_detect("hey_arduino_turn_off_light", turn_off)` - if "Hey Arduino, Turn on the light" or "Hey Arduino, Turn on the light" is detected
+
 - `Bridge.call("keyword_detected")` - inside the callback function, we use the Bridge tool to tell the microcontroller that the keyword has been spotted!
 
 On the microcontroller (sketch) side:
