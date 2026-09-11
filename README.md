@@ -1,6 +1,6 @@
 # Hey Arduino!
 
-The **Hey Arduino!** example triggers a LED matrix animation whenever the keyword "Hey Arduino" is detected through a microphone.
+The **Hey Arduino, Turn on/off the light!** example triggers a LED matrix animation whenever the keyword "Hey Arduino, Turn on/off the light" is detected through a microphone.
 
 To use this example, we need to use **Network Mode**, as it requires a [USB-C® hub](https://store.arduino.cc/products/usb-c-to-hdmi-multiport-adapter-with-ethernet-and-usb-hub) (to connect the microphone).
 
