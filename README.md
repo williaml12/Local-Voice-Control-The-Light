@@ -1,6 +1,6 @@
-# Hey Arduino, Turn on/off the light!
+# Hey Arduino, Turn on/off light!
 
-The **Hey Arduino, Turn on/off the light!** example triggers a LED matrix animation and turn on and off light whenever the keyword "Hey Arduino, Turn on/off the light" is detected through a microphone.
+The **Hey Arduino, Turn on/off light!** example triggers a LED matrix animation and turn on and off light whenever the keyword "Hey Arduino, Turn on the light" or "Hey Arduino, Turn off the light" is detected through a microphone.
 
 To use this example, we need to use **Network Mode**, as it requires a [USB-C® hub](https://store.arduino.cc/products/usb-c-to-hdmi-multiport-adapter-with-ethernet-and-usb-hub) (to connect the microphone).
 
@@ -39,14 +39,14 @@ Network mode is selected when launching the Arduino App Lab. You can read more a
 2. Launch the App by clicking on the "Play" button in the top right corner. Wait until the App has launched.
     ![Launching an App](assets/docs_assets/launch-app.png)
 
-3. Say the words "Hey Arduino" into the microphone.
-4. An animation on the LED matrix should trigger (heart animation).
+3. Say the words "Hey Arduino, Turn on the light" or "Hey Arduino, Turn off the light" into the microphone.
+4. An animation on the LED matrix should trigger (heart animation) and LED light will turn on or off.
 
 ### How it Works
 
 This example uses the `keyword_spotting` Brick, which is designed to detect specified keywords. A custom-trained model is used particularly for identifying **"Hey Arduino, Turn on/off the light"**.
 
-The Brick monitors the audio continuously, and when it detects the keyword, it calls the microcontroller to activate an animation on the LED matrix, using the Bridge tool.
+The Brick monitors the audio continuously, and when it detects the keyword, it calls the microcontroller to activate an animation on the LED matrix and have the relay to triggered light on or off, using the Bridge tool.
 
 ![How Hey Arduino! works](assets/docs_assets/keyword-spotting.png)
 
