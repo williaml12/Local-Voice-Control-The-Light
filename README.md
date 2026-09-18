@@ -1,10 +1,10 @@
 # Hey Arduino, Turn on/off light!
 
-The **Hey Arduino, Turn on/off light!** example triggers a LED matrix animation and turn on and off light whenever the keyword "Hey Arduino, Turn on the light" or "Hey Arduino, Turn off the light" is detected through a microphone.
+The **Hey Arduino, Turn on/off light!** app triggers a LED matrix animation and turns the light on and off whenever the keyword "Hey Arduino, Turn on light" or "Hey Arduino, Turn off light" is detected through a microphone.
 
-To use this example, we need to use **Network Mode**, as it requires a [USB-C® hub](https://store.arduino.cc/products/usb-c-to-hdmi-multiport-adapter-with-ethernet-and-usb-hub) (to connect the microphone).
+To use this app, we need to use **Network Mode**, as it requires a [USB-C® hub](https://store.arduino.cc/products/usb-c-to-hdmi-multiport-adapter-with-ethernet-and-usb-hub) (to connect the microphone).
 
-Network mode is selected when launching the Arduino App Lab. You can read more about this the [Network Mode section](/learn/first-setup#option-2-remote-connect-ssh).
+Network mode is selected when launching the Arduino App Lab. You can read more about this in the [Network Mode section](/learn/first-setup#option-2-remote-connect-ssh).
 
 ## Bricks Used
 
@@ -17,7 +17,7 @@ Network mode is selected when launching the Arduino App Lab. You can read more a
 - Arduino® UNO Q or Arduino VENTUNO Q
 - [USB-C® hub](https://store.arduino.cc/products/usb-c-to-hdmi-multiport-adapter-with-ethernet-and-usb-hub) _(only for UNO Q)_
 - USB microphone (or headset)
-- A power supply (5 V, 3 A) for the USB hub (e.g. a phone charger) _(only for UNO Q)_
+- A power supply (5 V, 3 A) for the USB hub (e.g., a phone charger) _(only for UNO Q)_
 
 ### Software
 
@@ -29,7 +29,7 @@ Network mode is selected when launching the Arduino App Lab. You can read more a
 
 1. Connect an USB-C® hub to the board
 2. Connect a USB microphone or headset to the USB-C® hub.
-3. Power the USB-C hub from a 5V power source (e.g. phone charger).
+3. Power the USB-C hub from a 5V power source (e.g., phone charger).
 
 ![Setting up the USB-C® hub](assets/docs_assets/hardware-setup.png)
 
@@ -40,13 +40,13 @@ Network mode is selected when launching the Arduino App Lab. You can read more a
     ![Launching an App](assets/docs_assets/launch-app.png)
 
 3. Say the words "Hey Arduino, Turn on the light" or "Hey Arduino, Turn off the light" into the microphone.
-4. An animation on the LED matrix should trigger (heart animation) and LED light will turn on or off.
+4. An animation on the LED matrix should trigger (heart animation), and the LED light will turn on or off.
 
 ### How it Works
 
 This example uses the `keyword_spotting` Brick, which is designed to detect specified keywords. A custom-trained model is used particularly for identifying **"Hey Arduino, Turn on/off the light"**.
 
-The Brick monitors the audio continuously, and when it detects the keyword, it calls the microcontroller to activate an animation on the LED matrix and have the relay to triggered light on or off, using the Bridge tool.
+The Brick monitors the audio continuously, and when it detects the keyword, it calls the microcontroller to activate an animation on the LED matrix and have the relay trigger the light on or off, using the Bridge tool.
 
 ![How Hey Arduino! works](assets/docs_assets/keyword-spotting.png)
 
@@ -63,3 +63,8 @@ On the microcontroller (sketch) side:
 
 - `Bridge.provide("keyword_detected", wake_up);` - we receive a call to "wake up" from the Python side.
 - `playAnimation(HeartAnim, 8, 1, 50);` - plays an animation when the keyword is identified.
+
+---
+Find more information about **🎙️ Local Edge AI Voice Assistant**, including code and setup for the bricks:
+
+Local Edge AI Voice Assistant (Kokoro TTS & ASR local Edition): https://github.com/williaml12/Local-Edge-AI-Voice-Assistant
