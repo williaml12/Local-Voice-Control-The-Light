@@ -23,7 +23,7 @@ Network mode is selected when launching the Arduino App Lab. You can read more a
 
 - Arduino App Lab
 
-## How to Use the Example
+## How to Use the App
 
 ### Hardware Setup
 
@@ -44,7 +44,7 @@ Network mode is selected when launching the Arduino App Lab. You can read more a
 
 ### How it Works
 
-This example uses the `keyword_spotting` Brick, which is designed to detect specified keywords. A custom-trained model is used particularly for identifying **"Hey Arduino, Turn on/off the light"**.
+This app uses the `keyword_spotting` Brick, which is designed to detect specified keywords. A custom-trained model is used particularly for identifying **"Hey Arduino, Turn on/off the light"**.
 
 The Brick monitors the audio continuously, and when it detects the keyword, it calls the microcontroller to activate an animation on the LED matrix and have the relay trigger the light on or off, using the Bridge tool.
 
