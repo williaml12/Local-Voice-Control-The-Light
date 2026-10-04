@@ -18,6 +18,7 @@ Network mode is selected when launching the Arduino App Lab. You can read more a
 - [USB-C® hub](https://store.arduino.cc/products/usb-c-to-hdmi-multiport-adapter-with-ethernet-and-usb-hub) _(only for UNO Q)_
 - USB microphone (or headset)
 - A power supply (5 V, 3 A) for the USB hub (e.g., a phone charger) _(only for UNO Q)_
+- Optional: Keyboard and mouse (Use UNO Q as a standalone Single-Board computer)
 
 ### Software
 
